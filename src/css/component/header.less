@@ -1,0 +1,47 @@
+.header {
+  background-color: @color_green;
+}
+
+.header {
+  &__logo {
+    padding-top: 46px;
+    padding-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .xs(justify-content, center);
+
+    .header__nasim {
+
+      a {
+        font-size: 3.375em;
+        font-weight: bold;
+        color: @color_white;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+
+      }
+    }
+
+    .header__nav {
+      align-self: center;
+
+      a {
+        font-size: 16px;
+        font-weight: 300;
+        color: @color_white;
+        margin-right: 30px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
